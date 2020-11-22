@@ -1,0 +1,2351 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="9">
+      <ReportData Ref="2" type="Stimulsoft.Report.Dictionary.StiBusinessObjectSource" isKey="true">
+        <Alias>ReportData</Alias>
+        <Columns isList="true" count="6">
+          <value>ReportColumns,Scout.Plugins.Core.Reports.Settings.ReportColumnCollection</value>
+          <value>UnitReports,Scout.Plugins.Core.CoreReports.Rmp.RmpReportUnit[]</value>
+          <value>Header,Scout.Plugins.Core.CoreReports.ScoutReportHeader</value>
+          <value>Titles,Scout.Plugins.Core.CoreReports.Rmp.RmpReportTitles</value>
+          <value>_ID,System.Int32</value>
+          <value>_Current,System.Object</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>ReportData</Name>
+        <NameInSource>ReportData</NameInSource>
+      </ReportData>
+      <ReportData_UnitReports Ref="3" type="Stimulsoft.Report.Dictionary.StiBusinessObjectSource" isKey="true">
+        <Alias>ReportData_UnitReports</Alias>
+        <Columns isList="true" count="7">
+          <value>UnitTitle,System.String</value>
+          <value>UnitId,System.Int32</value>
+          <value>DayReports,Scout.Plugins.Core.CoreReports.Rmp.RmpReportUnitDay[]</value>
+          <value>Summary,Scout.Plugins.Core.CoreReports.Rmp.RmpReportUnitSummary</value>
+          <value>_ID,System.Int32</value>
+          <value>_parentID,System.Int32</value>
+          <value>_Current,System.Object</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>ReportData_UnitReports</Name>
+        <NameInSource>ReportData_UnitReports</NameInSource>
+      </ReportData_UnitReports>
+      <ReportData_UnitReports_DayReports Ref="4" type="Stimulsoft.Report.Dictionary.StiBusinessObjectSource" isKey="true">
+        <Alias>ReportData_UnitReports_DayReports</Alias>
+        <Columns isList="true" count="15">
+          <value>AverageSpeed,System.String</value>
+          <value>Mileage,System.String</value>
+          <value>Day,System.String</value>
+          <value>BeginDateTimeValue,System.DateTime</value>
+          <value>BeginDateTime,System.String</value>
+          <value>EndDateTimeValue,System.DateTime</value>
+          <value>EndDateTime,System.String</value>
+          <value>Duration,System.String</value>
+          <value>EngineIdleDuration,System.String</value>
+          <value>EngineActiveWorkDuration,System.String</value>
+          <value>Periods,Scout.Plugins.Core.CoreReports.Rmp.RmpReportUnitDayPeriod[]</value>
+          <value>IsWeekEnd,System.Boolean</value>
+          <value>_ID,System.Int32</value>
+          <value>_parentID,System.Int32</value>
+          <value>_Current,System.Object</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>ReportData_UnitReports_DayReports</Name>
+        <NameInSource>ReportData_UnitReports_DayReports</NameInSource>
+      </ReportData_UnitReports_DayReports>
+      <ReportData_UnitReports_DayReports_Periods Ref="5" type="Stimulsoft.Report.Dictionary.StiBusinessObjectSource" isKey="true">
+        <Alias>ReportData_UnitReports_DayReports_Periods</Alias>
+        <Columns isList="true" count="15">
+          <value>PeriodName,System.String</value>
+          <value>BeginDateTimeValue,System.DateTime</value>
+          <value>BeginDateTime,System.String</value>
+          <value>EndDateTimeValue,System.DateTime</value>
+          <value>EndDateTime,System.String</value>
+          <value>Duration,System.String</value>
+          <value>Address,System.String</value>
+          <value>AverageSpeed,System.String</value>
+          <value>Mileage,System.String</value>
+          <value>PeriodTypeCode,System.Int32</value>
+          <value>EngineIdleDuration,System.String</value>
+          <value>EngineActiveWorkDuration,System.String</value>
+          <value>Latitude,System.String</value>
+          <value>Longitude,System.String</value>
+          <value>_ID,System.Int32</value>
+          <value>_parentID,System.Int32</value>
+          <value>_Current,System.Object</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>ReportData_UnitReports_DayReports_Periods</Name>
+        <NameInSource>ReportData_UnitReports_DayReports_Periods</NameInSource>
+      </ReportData_UnitReports_DayReports_Periods>
+      <ReportData_UnitReports_Summary Ref="6" type="Stimulsoft.Report.Dictionary.StiBusinessObjectSource" isKey="true">
+        <Alias>ReportData_UnitReports_Summary</Alias>
+        <Columns isList="true" count="15">
+          <value>EngineOnTime,System.String</value>
+          <value>EngineIdleTime,System.String</value>
+          <value>EngineActiveWorkTime,System.String</value>
+          <value>FuelSpentText,System.String</value>
+          <value>Mileage,System.String</value>
+          <value>BreakMileage,System.String</value>
+          <value>AverageSpeed,System.String</value>
+          <value>MaxSpeed,System.String</value>
+          <value>TotalMoveTime,System.String</value>
+          <value>TotalStopTime,System.String</value>
+          <value>TotalBreakTime,System.String</value>
+          <value>TotalTime,System.String</value>
+          <value>_ID,System.Int32</value>
+          <value>_parentID,System.Int32</value>
+          <value>_Current,System.Object</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>ReportData_UnitReports_Summary</Name>
+        <NameInSource>ReportData_UnitReports_Summary</NameInSource>
+      </ReportData_UnitReports_Summary>
+      <ReportData_ReportColumns Ref="7" type="Stimulsoft.Report.Dictionary.StiBusinessObjectSource" isKey="true">
+        <Alias>ReportData_ReportColumns</Alias>
+        <Columns isList="true" count="7">
+          <value>ReportColumns,Scout.Plugins.Core.Reports.Settings.ReportColumn[]</value>
+          <value>_ID,System.Int32</value>
+          <value>_parentID,System.Int32</value>
+          <value>_Current,System.Object</value>
+          <value>Name,System.String</value>
+          <value>IsVisible,System.Boolean</value>
+          <value>Title,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>ReportData_ReportColumns</Name>
+        <NameInSource>ReportData_ReportColumns</NameInSource>
+      </ReportData_ReportColumns>
+      <ReportData_Header Ref="8" type="Stimulsoft.Report.Dictionary.StiBusinessObjectSource" isKey="true">
+        <Alias>ReportData_Header</Alias>
+        <Columns isList="true" count="7">
+          <value>Title,System.String</value>
+          <value>BeginDateTime,System.DateTime</value>
+          <value>EndDateTime,System.DateTime</value>
+          <value>UserName,System.String</value>
+          <value>_ID,System.Int32</value>
+          <value>_parentID,System.Int32</value>
+          <value>_Current,System.Object</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>ReportData_Header</Name>
+        <NameInSource>ReportData_Header</NameInSource>
+      </ReportData_Header>
+      <ReportData_ReportColumns_ReportColumns Ref="9" type="Stimulsoft.Report.Dictionary.StiBusinessObjectSource" isKey="true">
+        <Alias>ReportData_ReportColumns_ReportColumns</Alias>
+        <Columns isList="true" count="6">
+          <value>Name,System.String</value>
+          <value>IsVisible,System.Boolean</value>
+          <value>Title,System.String</value>
+          <value>_ID,System.Int32</value>
+          <value>_parentID,System.Int32</value>
+          <value>_Current,System.Object</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>ReportData_ReportColumns_ReportColumns</Name>
+        <NameInSource>ReportData_ReportColumns_ReportColumns</NameInSource>
+      </ReportData_ReportColumns_ReportColumns>
+      <ReportData_Titles Ref="10" type="Stimulsoft.Report.Dictionary.StiBusinessObjectSource" isKey="true">
+        <Alias>ReportData_Titles</Alias>
+        <Columns isList="true" count="34">
+          <value>ReportTitle,System.String</value>
+          <value>SupportTitle,System.String</value>
+          <value>UnitReportData_Object,System.String</value>
+          <value>UnitReportData_Period,System.String</value>
+          <value>UnitReportData_Period_From,System.String</value>
+          <value>UnitReportData_Period_To,System.String</value>
+          <value>UnitReportData_User,System.String</value>
+          <value>UnitDayPeriodsHeader_Title,System.String</value>
+          <value>UnitDayPeriodsHeader_Number,System.String</value>
+          <value>UnitDayPeriodsHeader_Action,System.String</value>
+          <value>UnitDayPeriodsHeader_BeginDateTime,System.String</value>
+          <value>UnitDayPeriodsHeader_EndDateTime,System.String</value>
+          <value>UnitDayPeriodsHeader_Duration,System.String</value>
+          <value>UnitDayPeriodsHeader_EngineIdleDuration,System.String</value>
+          <value>UnitDayPeriodsHeader_EngineActiveWorkDuration,System.String</value>
+          <value>UnitDayPeriodsHeader_Address,System.String</value>
+          <value>UnitDayPeriodsHeader_AverageSpeed,System.String</value>
+          <value>UnitDayPeriodsHeader_Mileage,System.String</value>
+          <value>UnitDayReportFooter_Total,System.String</value>
+          <value>UnitReportSummary_TotalTime,System.String</value>
+          <value>UnitReportSummary_TotalStopTime,System.String</value>
+          <value>UnitReportSummary_MoveTime,System.String</value>
+          <value>UnitReportSummary_BreakTime,System.String</value>
+          <value>UnitReportSummary_EngineOnTime,System.String</value>
+          <value>UnitReportSummary_EngineIdleTime,System.String</value>
+          <value>UnitReportSummary_EngineActiveWorkTime,System.String</value>
+          <value>UnitReportSummary_Mileage,System.String</value>
+          <value>UnitReportSummary_BreakMileage,System.String</value>
+          <value>UnitReportSummary_AverageSpeed,System.String</value>
+          <value>UnitReportSummary_MaxSpeed,System.String</value>
+          <value>UnitReportSummary_FuelSpent,System.String</value>
+          <value>UnitDayPeriodsHeader_Latitude,System.String</value>
+          <value>UnitDayPeriodsHeader_Longitude,System.String</value>
+          <value>_ID,System.Int32</value>
+          <value>_parentID,System.Int32</value>
+          <value>_Current,System.Object</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>ReportData_Titles</Name>
+        <NameInSource>ReportData_Titles</NameInSource>
+      </ReportData_Titles>
+    </DataSources>
+    <Relations isList="true" count="9">
+      <ReportData Ref="11" type="DataRelation" isKey="true">
+        <Alias>ReportData</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>_parentID</value>
+        </ChildColumns>
+        <ChildSource isRef="3" />
+        <Dictionary isRef="1" />
+        <Name>ReportData</Name>
+        <NameInSource>ReportData_UnitReportsRelation</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>_ID</value>
+        </ParentColumns>
+        <ParentSource isRef="2" />
+      </ReportData>
+      <ReportData_UnitReports Ref="12" type="DataRelation" isKey="true">
+        <Alias>ReportData_UnitReports</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>_parentID</value>
+        </ChildColumns>
+        <ChildSource isRef="4" />
+        <Dictionary isRef="1" />
+        <Name>ReportData_UnitReports</Name>
+        <NameInSource>ReportData_UnitReports_DayReportsRelation</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>_ID</value>
+        </ParentColumns>
+        <ParentSource isRef="3" />
+      </ReportData_UnitReports>
+      <ReportData_UnitReports_DayReports Ref="13" type="DataRelation" isKey="true">
+        <Alias>ReportData_UnitReports_DayReports</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>_parentID</value>
+        </ChildColumns>
+        <ChildSource isRef="5" />
+        <Dictionary isRef="1" />
+        <Name>ReportData_UnitReports_DayReports</Name>
+        <NameInSource>ReportData_UnitReports_DayReports_PeriodsRelation</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>_ID</value>
+        </ParentColumns>
+        <ParentSource isRef="4" />
+      </ReportData_UnitReports_DayReports>
+      <ReportData_UnitReports Ref="14" type="DataRelation" isKey="true">
+        <Alias>ReportData_UnitReports</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>_parentID</value>
+        </ChildColumns>
+        <ChildSource isRef="6" />
+        <Dictionary isRef="1" />
+        <Name>ReportData_UnitReports</Name>
+        <NameInSource>ReportData_UnitReports_SummaryRelation</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>_ID</value>
+        </ParentColumns>
+        <ParentSource isRef="3" />
+      </ReportData_UnitReports>
+      <ReportData Ref="15" type="DataRelation" isKey="true">
+        <Alias>ReportData</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>_parentID</value>
+        </ChildColumns>
+        <ChildSource isRef="7" />
+        <Dictionary isRef="1" />
+        <Name>ReportData</Name>
+        <NameInSource>ReportData_ReportColumnsRelation</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>_ID</value>
+        </ParentColumns>
+        <ParentSource isRef="2" />
+      </ReportData>
+      <ReportData_ReportColumns Ref="16" type="DataRelation" isKey="true">
+        <Alias>ReportData_ReportColumns</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>_parentID</value>
+        </ChildColumns>
+        <Dictionary isRef="1" />
+        <Name>ReportData_ReportColumns</Name>
+        <NameInSource>ReportData_ReportColumns_ColumnsListRelation</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>_ID</value>
+        </ParentColumns>
+        <ParentSource isRef="7" />
+      </ReportData_ReportColumns>
+      <ReportData Ref="17" type="DataRelation" isKey="true">
+        <Alias>ReportData</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>_parentID</value>
+        </ChildColumns>
+        <ChildSource isRef="8" />
+        <Dictionary isRef="1" />
+        <Name>ReportData</Name>
+        <NameInSource>ReportData_HeaderRelation</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>_ID</value>
+        </ParentColumns>
+        <ParentSource isRef="2" />
+      </ReportData>
+      <ReportData_ReportColumns Ref="18" type="DataRelation" isKey="true">
+        <Alias>ReportData_ReportColumns</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>_parentID</value>
+        </ChildColumns>
+        <ChildSource isRef="9" />
+        <Dictionary isRef="1" />
+        <Name>ReportData_ReportColumns</Name>
+        <NameInSource>ReportData_ReportColumns_ReportColumnsRelation</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>_ID</value>
+        </ParentColumns>
+        <ParentSource isRef="7" />
+      </ReportData_ReportColumns>
+      <ReportData Ref="19" type="DataRelation" isKey="true">
+        <Alias>ReportData</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>_parentID</value>
+        </ChildColumns>
+        <ChildSource isRef="10" />
+        <Dictionary isRef="1" />
+        <Name>ReportData</Name>
+        <NameInSource>ReportData_TitlesRelation</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>_ID</value>
+        </ParentColumns>
+        <ParentSource isRef="2" />
+      </ReportData>
+    </Relations>
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EndRenderEvent>
+    // Если что, в конце есть объяснение некоторых особенностей этого кода.
+
+
+    // этот рекурсивный метод используется для того, чтобы найти первый StiComponent с указанным именем
+    // внутри указанного компонента(желательно контейнера)
+    Func&lt;string, StiComponent, StiComponent&gt; findFirstElementByName = null;
+    findFirstElementByName = delegate(string name, StiComponent parent)
+    {
+    // если переданный компонент и есть искомый, возвращаем его
+    if (parent.Name == name) return parent;
+    // если переданный компонент - контейнер, осуществляем поиск по его детям
+    if (parent is StiContainer)
+    {
+    foreach (var subComponent in (parent as StiContainer).Components)
+    {
+    // рекурсивный вызов функции
+    var child = findFirstElementByName.Invoke(name, subComponent as StiComponent);
+    if (child != null) return child;
+    }
+    }
+    return null;
+    };
+
+    // этот рекурсивный метод используется для того, чтобы найти первый элемент типа StiSimpleText
+    // внутри иерархии переданного в параметре компонента.
+    Func&lt;StiComponent, StiSimpleText&gt; findFirstChildStiSimpleText = null;
+    findFirstChildStiSimpleText = delegate(StiComponent component)
+    {
+    // если переданный компонент и есть StiSimpleText, возвращаем
+    if (component is StiSimpleText)
+    {
+    return (component as StiSimpleText);
+    }
+    // если переданный компонент - контейнер, осуществляем поиск по его детям
+    if (component is StiContainer)
+    {
+    foreach (var subComponent in (component as StiContainer).Components)
+    {
+    // рекурсивный вызов функции
+    var child = findFirstChildStiSimpleText.Invoke(subComponent as StiComponent);
+    if (child != null) return child;
+    }
+    }
+    return null;
+    };
+
+    // этот рекурсивный метод используется для того, чтобы найти все элементы типа StiSimpleText
+    // внутри иерархии переданного в параметре компонента.
+    Func&lt;StiComponent, System.Collections.Generic.List&lt;StiSimpleText&gt;&gt; findAllChildsStiSimpleText = null;
+    findAllChildsStiSimpleText = delegate(StiComponent component)
+    {
+    var result = new System.Collections.Generic.List&lt;StiSimpleText&gt;();
+    // если переданный компонент и есть StiSimpleText, добавляем к результату.
+    if (component is StiSimpleText)
+    {
+    result.Add(component as StiSimpleText);
+    }
+    // если переданный компонент - контейнер, осуществляем поиск по его детям
+    if (component is StiContainer)
+    {
+    foreach (var subComponent in (component as StiContainer).Components)
+    {
+    // рекурсивный вызов функции
+    var childs = findAllChildsStiSimpleText.Invoke(subComponent as StiComponent);
+    result.AddRange(childs);
+    }
+    }
+    return result;
+    };
+
+    // этот метод используется для создания словаря ".Name ячейки"-"Текст столбца".
+    // Его можно и не использовать, но если есть зависимость между названиями ячейки и названиями столбцов,
+    // то ее можно определить здесь для уменьшения количества лишнего кода.
+    // В качестве параметра желательно передавать первую страницу, метод пытается делать маппинг по
+    // именам компонентов Header'а, которые обычно заканчиваются на "Header"
+    Func&lt;StiComponent, System.Collections.Generic.Dictionary&lt;string, string&gt;&gt; findMappingNameText =
+    delegate(StiComponent component)
+    {
+    var dict = new System.Collections.Generic.Dictionary&lt;string, string&gt;();
+    // если переданный компонент - контейнер, получаем всех детей типа StiSimpleText
+    // и осуществляем маппинг
+    if (component is StiContainer)
+    {
+    var simpleTexts = findAllChildsStiSimpleText.Invoke(component);
+    foreach (var stiSimpleText in simpleTexts)
+    {
+    // ищем StiSimpleText с .Name, заканчивающимся на "Header"
+    var lasIndex = stiSimpleText.Name.LastIndexOf("Header");
+    if (lasIndex &lt; 0) continue;
+
+    // преобразуем имя так, чтобы потом можно было без проблем переименовать ячейки.
+    // Обычно, если заголовок имеет название "UnitHeader", то ячейка называется "UnitData"
+    var name = stiSimpleText.Name.Substring(0, lasIndex) + "Data";
+    if (dict.ContainsKey(name)) continue;
+
+    dict.Add(name, stiSimpleText.Text);
+    }
+    }
+    return dict;
+    };
+
+    // этот метод используется для того, чтобы найти первый компонент типа StiSimpleText внутри
+    // первого найденного компонента с заданным именем. possibleParents - это массив компонентов, по которым
+    // осуществляется поиск. При первом совпадении метод сразу возвращает значение, не проверяя остальные.
+    Func&lt;string, System.Collections.IEnumerable, string&gt; findTextByName =
+    delegate(string name, System.Collections.IEnumerable possibleParents)
+    {
+    foreach (var possibleParent in possibleParents)
+    {
+    // нам нужен только контейнер.
+    if (!(possibleParent is StiContainer)) continue;
+
+    // ищем первый элемент с таким именем
+    var element = findFirstElementByName.Invoke(name, (StiContainer)possibleParent);
+    if (element == null) continue;
+
+    // ищем первый StiSimpleText внутри найденного по имени элемента
+    var stiText = findFirstChildStiSimpleText.Invoke(element);
+    if (stiText == null) continue;
+
+    // возвращаем текст
+    return stiText.Text;
+    }
+    return null;
+    };
+
+    var allPages = (this as StiReport).RenderedPages;
+    var firstPage = allPages[0];
+    var report = (StiReport) this;
+
+    // получаем маппинг ".Name ячейки"-"Текст столбца"
+    var mapping = findMappingNameText.Invoke(firstPage);
+
+    // не все, что нужно, входит в этот маппинг. Дополняем его.
+    // Ключ - это текущее свойство .Name ячейки, значение - имя, которое ей будет присвоено
+    var additionalMapping = new System.Collections.Generic.Dictionary&lt;string, string&gt;()
+    {
+    {"ReportHeaderText", findTextByName.Invoke("ReportHeaderText", allPages)},
+    {"UnitInfoText", findTextByName.Invoke("UnitLabel", allPages)},
+    {"ReportPeriodFromDate", findTextByName.Invoke("ReportPeriodFromLabel", allPages)},
+    {"ReportPeriodFromTime", findTextByName.Invoke("ReportPeriodFromLabel", allPages)},
+    {"UnitReportSummaryMileageLabel", findTextByName.Invoke("UnitReportSummaryMileageLabel", allPages)},
+    {"ReportPeriodToLabel", findTextByName.Invoke("ReportPeriodToLabel", allPages)},
+    {"ReportPeriodToDate", findTextByName.Invoke("ReportPeriodToLabel", allPages)},
+    {"ReportPeriodToTime", findTextByName.Invoke("ReportPeriodToLabel", allPages)},
+    {"UnitReportSummaryMileage", findTextByName.Invoke("UnitReportSummaryMileageLabel", allPages)},
+    };
+    // слияние mapping и additionalMapping. Перезаписываем уже существующие в mapping значения
+    foreach (var map in additionalMapping)
+    {
+    if (mapping.ContainsKey(map.Key))
+    {
+    mapping[map.Key] = map.Value;
+    }
+    else
+    {
+    mapping.Add(map.Key, map.Value);
+    }
+    }
+
+    // Пробегаем каждый компонент каждой страницы.
+    // Таблицы становятся кучей ячеек раскиданных по странице.
+    foreach (StiPage page in allPages)
+    {
+    foreach (StiComponent component in page.Components)
+    {
+    // ищем первый текстовый элемент внутри компонента и пытаемся произвести замену имени
+    var stitext = findFirstChildStiSimpleText.Invoke(component);
+    if (stitext != null)
+    {
+    var name = stitext.Name;
+    if (!mapping.ContainsKey(name)) continue;
+
+    // нам не нужны новые строки в имени. Это ломает csv
+    component.Name = (mapping[name] ?? "").Replace("\n", "").Replace("\r", "");
+    }
+    }
+    }
+
+    // Небольшое пояснение с смыслу всего этого кода:
+    //
+    // В экспорте отчетов в формат csv кто-то в стимулсофте написал хрень. И в заголовок столбца попадает имя элемента,
+    // для которого колонка предназначена. Пруф - Stimulsoft.Report.Export.StiCsvExportService, строка 171 и далее.
+    //
+    //
+    // Небольшое пояснение к коду:
+    //
+    // Func&lt;...&gt; - Это один из немногих способов объявить в этом ужасе функцию. Еще есть Task, Action и т.п.
+    //
+    // { "ReportPeriodToDate", findTextByName.Invoke("ReportPeriodToLabel", allPages) } - подобные штуки можно сгенерировать так:
+    //     1. Сохраняем отчет в csv, смотрим на кривые названия колонок. К примеру, ReportPeriodToDate.
+    //     2. Находим в шаблоне отчета элемент с именем ReportPeriodToDate и определяем, из какого элемента срендеренный текст
+    //        подошел бы лучше всего для того, чтобы дать нормальное имя вместо "ReportPeriodToDate".
+    //     3. Предположим, мы решили, что у элемента "ReportPeriodToLabel" наиболее подходящий текст для этого.
+    //     4. Делаем Ctrl-C, Ctrl-V, меняем строчки.
+    //
+    // System.Collections.Generic, System.Collections и т.п. - потому что в using'ах перед классом, в который подставляется
+    //                                                         этот код, соответствующих неймспейсов нет, но есть неполный
+    //                                                         набор неймспейсов от стимулсофта.
+    //
+    //
+    //
+    // Небольшое пояснение к особенностям некоторых стимулсофтовских контролов:
+    //
+    // StiComponent - базовый класс для компонентов, которые можно положить на страницу. Он содержит основные свойства типа
+    //                ширины, высоты, имени. Свойство Text он НЕ содержит.
+    // StiContainer - базовый класс компонентов, в которые тоже можно что-нибудь положить. Унаследован от StiComponent.
+    //                У него есть свойство Components типа StiComponentsCollection. А StiComponentsCollection - это обычный
+    //                IEnumerable, то есть все его элементы имеют тип object. Поэтому в коде много приведений к StiComponent,
+    //                хотя в ней ничего кроме StiComponent и его наследников и не может быть.
+    // StiSimpleText - это наследник StiComponent, у которого имеется свойство Text типа StiExpression. Если кто-то это вообще
+    //                 читает, дайте мне шоколадку. В любом случае, есть неявное преобразование из StiExpression в string
+    //                 и наоборот. Кстати, до момента рендеринга отчета мы, скорее всего, будем наблюдать в свойстве Text
+    //                 выражение типа {Report_Data.Some_Data_Column}. Также у есть свойство TextValue, которое следует
+    //                 использовать в событиях, когда рендеринг уже закончился. Но событие EndRendering не подходит, так как
+    //                 рендеринг только заканчивается, но еще не завершен.
+    // .RenderedPages - это свойство типа StiPagesCollection у объекта класса StiReport. Содержит в себе отрендеренные страницы,
+    //                  как обычно, наследуется от IEnumerable и нужно руками конвертить в StiPage.
+    // .Pages - тоже свойство типа StiPagesCollection у объекта класса StiReport. Не путать с RenderedPages, потому что
+    //          свойство Pages содержит только шаблон отчета с полным сохранением иерархии, которую мы видим в редакторе.
+  </EndRenderEvent>
+  <EngineVersion>EngineV2</EngineVersion>
+  <ExportedEvent>// Здесь нет кода. Но если бы был, то он выполнялся бы уже после того, как сгенерированы колонки в csv.</ExportedEvent>
+  <GlobalizationStrings isList="true" count="2">
+    <Item19 Ref="20" type="Stimulsoft.Report.StiGlobalizationContainer" isKey="true">
+      <CultureName>en</CultureName>
+      <Items isList="true" count="0" />
+    </Item19>
+    <Item20 Ref="21" type="Stimulsoft.Report.StiGlobalizationContainer" isKey="true">
+      <CultureName>ru</CultureName>
+      <Items isList="true" count="0" />
+    </Item20>
+  </GlobalizationStrings>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="22" type="Page" isKey="true">
+      <BeginRenderEvent>
+        // Проверка видимости столбцов и изменение ширины видимых столбцов при необходимости
+
+        // ширина видимых столбцов таблицы
+        double width = 0.0;
+        // фактическая ширина таблицы
+        double actualWidth = 19;
+        // последний столбец
+        StiComponent lastColumn = null;
+
+        //MessageBox.Show("Обработка заголовка");
+
+        var rColumnsData = ReportData.ReportColumns;
+        var rColumns = rColumnsData != null ? rColumnsData.ReportColumns : null;
+
+        // Заголовок таблицы
+        foreach (StiComponent sti in UnitDayPeriodsHeader.Components)
+        {
+        if (sti.Name == "UnitDayPeriodsHeaderWhitespacePanel" ||
+        sti.Name == "UnitDayPeriodsHeaderText")
+        {
+        continue;
+        }
+
+        // проверка видимости каждого элемента заголовка
+        var columnName = sti.Name.Replace("UnitDayPeriods", "").Replace("Header", "");
+
+        var isVisible = true;
+        if (rColumns != null)
+        {
+        foreach (var rColumn in rColumns)
+        {
+        if (rColumn == null) continue;
+        if (rColumn.Name == columnName)
+        {
+        isVisible = rColumn.IsVisible;
+        break;
+        }
+        }
+        }
+
+        sti.Enabled = isVisible;
+        //MessageBox.Show(string.Format("Column: {0}; IsVisible = {1}", columnName, isVisible), sti.Name);
+        if (isVisible)
+        {
+        width += sti.Width;
+        lastColumn = sti;
+        }
+        }
+        lastColumn.DockStyle = StiDockStyle.Fill;
+
+        //MessageBox.Show("Обработка таблицы");
+
+        // проверка видимости столбцов таблицы
+        foreach (StiComponent sti in UnitDayPeriods.Components)
+        {
+        var columnName = sti.Name.Replace("UnitDayPeriods", "").Replace("Data", "");
+
+        var isVisible = true;
+        if (rColumns != null)
+        {
+        foreach (var rColumn in rColumns)
+        {
+        if (rColumn == null) continue;
+        if (rColumn.Name == columnName)
+        {
+        isVisible = rColumn.IsVisible;
+        break;
+        }
+        }
+        }
+
+        //MessageBox.Show(string.Format("Column: {0}; IsVisible = {1}", columnName, isVisible), sti.Name);
+        sti.Enabled = isVisible;
+        if (isVisible)
+        {
+        lastColumn = sti;
+        }
+        }
+        lastColumn.DockStyle = StiDockStyle.Fill;
+
+        //MessageBox.Show("Обработка итогов");
+
+        // итоги таблицы
+        foreach (StiComponent sti in UnitDayReportFooter.Components)
+        {
+        var columnName = sti.Name.Replace("UnitDayFooter", "");
+
+        var isVisible = true;
+        if (rColumns != null)
+        {
+        foreach (var rColumn in rColumns)
+        {
+        if (rColumn == null) continue;
+        if (rColumn.Name == columnName)
+        {
+        isVisible = rColumn.IsVisible;
+        break;
+        }
+        }
+        }
+
+        //MessageBox.Show(string.Format("Column: {0}; IsVisible = {1}", columnName, isVisible), sti.Name);
+        sti.Enabled = isVisible;
+        if (isVisible)
+        {
+        lastColumn = sti;
+        }
+        }
+        lastColumn.DockStyle = StiDockStyle.Fill;
+
+        // вычисление коэффициента отношения общей ширины всей таблицы к ширине таблицы с видимыми столбцами
+        double k = actualWidth / width;
+
+        //MessageBox.Show(string.Format("Width = {0:0.000}; ActualWidth = {1:0.000}; k = {2:0.000}", width, actualWidth, k));
+
+        width = 0;
+
+        // ширина всех видимых столбцов умножается на полученный коэффициент
+        foreach (StiComponent sti in UnitDayPeriodsHeader.Components)
+        {
+        if (sti.Name == "UnitDayPeriodsHeaderWhitespacePanel" ||
+        sti.Name == "UnitDayPeriodsHeaderText")
+        {
+        continue;
+        }
+
+        //MessageBox.Show(string.Format("Width = {0:0.00}; NewWidth = {1:0.00}; IsVisible = {2}", sti.Width, sti.Width * k, sti.Enabled), sti.Name);
+        if (sti.Enabled)
+        {
+        sti.Width *= k;
+        width += sti.Width;
+        }
+        }
+
+        foreach (StiComponent sti in UnitDayPeriodsAdditionalInformationHeader.Components)
+        {
+        sti.Width *= k;
+        }
+
+        //MessageBox.Show(string.Format("Width = {0:0.000}; ActualWidth = {1:0.000}; k = {2:0.000}", width, actualWidth, k));
+
+        foreach (StiComponent sti in UnitDayPeriods.Components)
+        {
+        //MessageBox.Show(string.Format("Width = {0:0.00}; NewWidth = {1:0.00}; IsVisible = {2}", sti.Width, sti.Width * k, sti.Enabled), sti.Name);
+        if (sti.Enabled) sti.Width *= k;
+        }
+        UnitDayPeriodsAverageSpeedData.Width *= k;
+
+        foreach (StiComponent sti in UnitDayReportFooter.Components)
+        {
+        if (sti.Name == "UnitDayFooterLabel")
+        {
+        sti.Width = 0;
+
+        if (UnitDayPeriodsNumberData.Enabled)
+        sti.Width += UnitDayPeriodsNumberData.Width;
+        if (UnitDayPeriodsActionData.Enabled)
+        sti.Width += UnitDayPeriodsActionData.Width;
+
+        continue;
+        }
+
+        if (sti.Enabled) sti.Width *= k;
+        }
+        UnitDayFooterAverageSpeed.Width *= k;
+      </BeginRenderEvent>
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="11">
+        <PageHeader Ref="23" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,1.2</ClientRectangle>
+          <Components isList="true" count="2">
+            <WebLabel Ref="24" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.98,0.58,4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>783f75ee86484c288e1baf1d7f086d8d</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>WebLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="23" />
+              <Text>www.scout-gps.ru</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </WebLabel>
+            <ScoutLogoImage Ref="25" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.02,0,3.53,0.84</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Image>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</Image>
+              <Name>ScoutLogoImage</Name>
+              <Page isRef="22" />
+              <Parent isRef="23" />
+              <Smoothing>False</Smoothing>
+              <Stretch>True</Stretch>
+            </ScoutLogoImage>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeader</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+        </PageHeader>
+        <PageFooter Ref="26" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,26.7,19,1</ClientRectangle>
+          <Components isList="true" count="4">
+            <ReportNameLabel Ref="27" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.01,0.43,10,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9.75,Regular,Point,False,204</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>ReportNameLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="26" />
+              <Text>{ReportData_Titles.ReportTitle}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>SystemVariables</Type>
+              <VertAlignment>Center</VertAlignment>
+            </ReportNameLabel>
+            <SupportLabel Ref="28" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.8,0.43,6.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>c347dc688a0c4f77b5870eea76dd1ec2</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>SupportLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="26" />
+              <Text>{ReportData_Titles.SupportTitle}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </SupportLabel>
+            <PageNumberLabel Ref="29" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>17.6,0.23,1.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11.25,Regular,Point,False,204</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>PageNumberLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="26" />
+              <Text>{PageNumberThrough}/{TotalPageCountThrough}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </PageNumberLabel>
+            <HorizontalLinePrimitive1 Ref="30" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0.1,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="31" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive1</Name>
+              <Page isRef="22" />
+              <Parent isRef="26" />
+              <StartCap Ref="32" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageFooter</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+        </PageFooter>
+        <MainReportData Ref="33" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,2.4,19,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>ReportData</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>MainReportData</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+          <Sort isList="true" count="0" />
+        </MainReportData>
+        <UnitReportData Ref="34" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,3.2,19,2.8</ClientRectangle>
+          <Components isList="true" count="14">
+            <ReportHeaderText Ref="35" type="Text" isKey="true">
+              <Border>All;Black;2;Solid;False;4;Black</Border>
+              <Brush>[218:218:218]</Brush>
+              <ClientRectangle>0,0,19,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Top</DockStyle>
+              <Font>Arial,15.75,Bold,Point,False,204</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>ReportHeaderText</Name>
+              <Page isRef="22" />
+              <Parent isRef="34" />
+              <Text>{ReportData_Titles.ReportTitle}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </ReportHeaderText>
+            <UnitLabel Ref="36" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.8,7,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11.25,Regular,Point,False,204</Font>
+              <Margins>10,0,0,0</Margins>
+              <Name>UnitLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="34" />
+              <Text>{ReportData_Titles.UnitReportData_Object}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitLabel>
+            <ReportPeriodLabel Ref="37" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.4,7,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11.25,Regular,Point,False,204</Font>
+              <Guid>996e0447023e4930b976b314920a949f</Guid>
+              <Margins>10,0,0,0</Margins>
+              <Name>ReportPeriodLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="34" />
+              <Text>{ReportData_Titles.UnitReportData_Period}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </ReportPeriodLabel>
+            <UserLabel Ref="38" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2,7,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11.25,Regular,Point,False,204</Font>
+              <Guid>70cc9b6cea8c4fa0b9cd567534ada2b7</Guid>
+              <Margins>10,0,0,0</Margins>
+              <Name>UserLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="34" />
+              <Text>{ReportData_Titles.UnitReportData_User}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UserLabel>
+            <UnitInfoText Ref="39" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,0.8,12,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11.25,Regular,Point,False,204</Font>
+              <Guid>4b94d0ab687c44798eb3ce5da4863ee1</Guid>
+              <Margins>10,0,0,0</Margins>
+              <Name>UnitInfoText</Name>
+              <Page isRef="22" />
+              <Parent isRef="34" />
+              <Text>{ReportData_UnitReports.UnitTitle}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitInfoText>
+            <UserText Ref="40" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,2,12,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11.25,Bold,Point,False,204</Font>
+              <Guid>c241a8e6c6584af0a87b07a6342f967a</Guid>
+              <Margins>10,0,0,0</Margins>
+              <Name>UserText</Name>
+              <Page isRef="22" />
+              <Parent isRef="34" />
+              <Text>{ReportData_Header.UserName}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UserText>
+            <ReportPeriodFromLabel Ref="41" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,1.4,0.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11.25,Regular,Point,False,204</Font>
+              <Margins>10,0,0,0</Margins>
+              <Name>ReportPeriodFromLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="34" />
+              <Text>{ReportData_Titles.UnitReportData_Period_From}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </ReportPeriodFromLabel>
+            <ReportPeriodToLabel Ref="42" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11,1.4,1,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11.25,Regular,Point,False,204</Font>
+              <Guid>24a2297ffff94f81a4c1739f903b21dc</Guid>
+              <Margins>10,0,0,0</Margins>
+              <Name>ReportPeriodToLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="34" />
+              <Text>{ReportData_Titles.UnitReportData_Period_To}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </ReportPeriodToLabel>
+            <ReportPeriodFromDate Ref="43" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.6,1.4,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11.25,Bold,Point,False,204</Font>
+              <Guid>7a82ca594ec544c48acd4e68ad2b77a6</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>ReportPeriodFromDate</Name>
+              <Page isRef="22" />
+              <Parent isRef="34" />
+              <Text>{ReportData_Header.BeginDateTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="44" type="DateFormat" isKey="true" />
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </ReportPeriodFromDate>
+            <ReportPeriodToDate Ref="45" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.8,1.4,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11.25,Bold,Point,False,204</Font>
+              <Guid>575b2bc97f264e32a5d74e371ecbfb4b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>ReportPeriodToDate</Name>
+              <Page isRef="22" />
+              <Parent isRef="34" />
+              <Text>{ReportData_Header.EndDateTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="46" type="DateFormat" isKey="true" />
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </ReportPeriodToDate>
+            <ReportPeriodFromTime Ref="47" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.6,1.4,1.7,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11.25,Regular,Point,False,204</Font>
+              <Guid>d01f23341d494920953b777f2d25d8cb</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>ReportPeriodFromTime</Name>
+              <Page isRef="22" />
+              <Parent isRef="34" />
+              <Text>{Format("{0:HH:mm:ss}", ReportData_Header.BeginDateTime)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="48" type="TimeFormat" isKey="true">
+                <StringFormat>HH:mm:ss</StringFormat>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </ReportPeriodFromTime>
+            <ReportPeriodToTime Ref="49" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>13.8,1.4,1.7,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11.25,Regular,Point,False,204</Font>
+              <Guid>c5130fc8c8e04d78bbc5daa9f7fddaca</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>ReportPeriodToTime</Name>
+              <Page isRef="22" />
+              <Parent isRef="34" />
+              <Text>{Format("{0:HH:mm:ss}", ReportData_Header.EndDateTime)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="50" type="TimeFormat" isKey="true">
+                <StringFormat>HH:mm:ss</StringFormat>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </ReportPeriodToTime>
+            <StartPointPrimitive1 Ref="51" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>0,0.8,0,0</ClientRectangle>
+              <Name>StartPointPrimitive1</Name>
+              <Page isRef="22" />
+              <Parent isRef="34" />
+              <ReferenceToGuid>a2a2b3286e374b6a923e389e1e07ad27</ReferenceToGuid>
+            </StartPointPrimitive1>
+            <EndPointPrimitive1 Ref="52" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>19,2.6,0,0</ClientRectangle>
+              <Name>EndPointPrimitive1</Name>
+              <Page isRef="22" />
+              <Parent isRef="34" />
+              <ReferenceToGuid>a2a2b3286e374b6a923e389e1e07ad27</ReferenceToGuid>
+            </EndPointPrimitive1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>ReportData_UnitReports</DataSourceName>
+          <Filters isList="true" count="0" />
+          <MasterComponent isRef="33" />
+          <Name>UnitReportData</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+          <Sort isList="true" count="0" />
+        </UnitReportData>
+        <UnitDayPeriodsHeader Ref="53" type="HeaderBand" isKey="true">
+          <Border>All;Black;2;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,6.8,19,1.8</ClientRectangle>
+          <Components isList="true" count="9">
+            <UnitDayPeriodsHeaderText Ref="54" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;1;Solid;Black;1;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:206:97]</Brush>
+              <ClientRectangle>0,0,19,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Top</DockStyle>
+              <Font>Arial,12,Bold,Point,False,204</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsHeaderText</Name>
+              <Page isRef="22" />
+              <Parent isRef="53" />
+              <Text>{ReportData_Titles.UnitDayPeriodsHeader_Title}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsHeaderText>
+            <UnitDayPeriodsNumberHeader Ref="55" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[235:235:235]</Brush>
+              <ClientRectangle>0,0.6,1,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7,Bold</Font>
+              <Guid>a452ea30baea4581ab4b26fed1c1256c</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsNumberHeader</Name>
+              <Page isRef="22" />
+              <Parent isRef="53" />
+              <Text>{ReportData_Titles.UnitDayPeriodsHeader_Number}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsNumberHeader>
+            <UnitDayPeriodsActionHeader Ref="56" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[235:235:235]</Brush>
+              <ClientRectangle>1,0.6,2.2,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7,Bold</Font>
+              <Guid>e2f8a9bccd4f417b90173243f4b285f3</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsActionHeader</Name>
+              <Page isRef="22" />
+              <Parent isRef="53" />
+              <Text>{ReportData_Titles.UnitDayPeriodsHeader_Action}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsActionHeader>
+            <UnitDayPeriodsLatitudeHeader Ref="117" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[235:235:235]</Brush>
+              <ClientRectangle>1,0.6,2.2,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7,Bold</Font>
+              <Guid>e2f8a9bccd4f417b90173243f4b285f4</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsLatitudeHeader</Name>
+              <Page isRef="22" />
+              <Parent isRef="53" />
+              <Text>{ReportData_Titles.UnitDayPeriodsHeader_Latitude}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsLatitudeHeader>
+            <UnitDayPeriodsLongitudeHeader Ref="118" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[235:235:235]</Brush>
+              <ClientRectangle>1,0.6,2.2,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7,Bold</Font>
+              <Guid>e2f8a9bccd4f417b90173243f4b285f5</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsLongitudeHeader</Name>
+              <Page isRef="22" />
+              <Parent isRef="53" />
+              <Text>{ReportData_Titles.UnitDayPeriodsHeader_Longitude}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsLongitudeHeader>
+            <UnitDayPeriodsBeginDateTimeHeader Ref="57" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[235:235:235]</Brush>
+              <ClientRectangle>3.2,0.6,2.2,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7,Bold</Font>
+              <Guid>f1a630fc49d84191a9557b4184deddb8</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsBeginDateTimeHeader</Name>
+              <Page isRef="22" />
+              <Parent isRef="53" />
+              <Text>{ReportData_Titles.UnitDayPeriodsHeader_BeginDateTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsBeginDateTimeHeader>
+            <UnitDayPeriodsEndDateTimeHeader Ref="58" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[235:235:235]</Brush>
+              <ClientRectangle>5.4,0.6,2.2,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7,Bold</Font>
+              <Guid>2e8f958af5de4b409dd56d73a44ddc34</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsEndDateTimeHeader</Name>
+              <Page isRef="22" />
+              <Parent isRef="53" />
+              <Text>{ReportData_Titles.UnitDayPeriodsHeader_EndDateTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsEndDateTimeHeader>
+            <UnitDayPeriodsDurationHeader Ref="59" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[235:235:235]</Brush>
+              <ClientRectangle>7.6,0.6,2.2,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7,Bold</Font>
+              <Guid>b2d8a3b84bc24785832ff6f552d2cacb</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsDurationHeader</Name>
+              <Page isRef="22" />
+              <Parent isRef="53" />
+              <Text>{ReportData_Titles.UnitDayPeriodsHeader_Duration}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsDurationHeader>
+            <UnitDayPeriodsEngineIdleDurationHeader Ref="60" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[235:235:235]</Brush>
+              <ClientRectangle>9.8,0.6,1.6,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7,Bold</Font>
+              <Guid>65f83665c5f14e659b3a4a1f898a9dd1</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsEngineIdleDurationHeader</Name>
+              <Page isRef="22" />
+              <Parent isRef="53" />
+              <Text>{ReportData_Titles.UnitDayPeriodsHeader_EngineIdleDuration}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsEngineIdleDurationHeader>
+            <UnitDayPeriodsEngineActiveWorkDurationHeader Ref="61" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[235:235:235]</Brush>
+              <ClientRectangle>11.4,0.6,1.6,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7,Bold</Font>
+              <Guid>fb14bdb762964e078304412d21c3f08d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsEngineActiveWorkDurationHeader</Name>
+              <Page isRef="22" />
+              <Parent isRef="53" />
+              <Text>{ReportData_Titles.UnitDayPeriodsHeader_EngineActiveWorkDuration}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsEngineActiveWorkDurationHeader>
+            <UnitDayPeriodsAdditionalInformationHeader Ref="62" type="Stimulsoft.Report.Components.StiPanel" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>13,0.6,6,1.2</ClientRectangle>
+              <Components isList="true" count="3">
+                <UnitDayPeriodsAddressHeader Ref="63" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>[235:235:235]</Brush>
+                  <ClientRectangle>0,0,6,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <DockStyle>Top</DockStyle>
+                  <Font>Arial,7,Bold</Font>
+                  <Guid>4f8f2c1b8bf2412292ddb6b8e42c20cf</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>UnitDayPeriodsAddressHeader</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="62" />
+                  <Text>{ReportData_Titles.UnitDayPeriodsHeader_Address}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </UnitDayPeriodsAddressHeader>
+                <UnitDayPeriodsAverageSpeedHeader Ref="64" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>[235:235:235]</Brush>
+                  <ClientRectangle>0,0.6,3,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <DockStyle>Left</DockStyle>
+                  <Font>Arial,7,Bold</Font>
+                  <Guid>836c658ab03d44948e0ae84018edc6e8</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>UnitDayPeriodsAverageSpeedHeader</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="62" />
+                  <Text>{ReportData_Titles.UnitDayPeriodsHeader_AverageSpeed}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </UnitDayPeriodsAverageSpeedHeader>
+                <UnitDayPeriodsMileageHeader Ref="65" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>[235:235:235]</Brush>
+                  <ClientRectangle>3,0.6,3,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <DockStyle>Fill</DockStyle>
+                  <Font>Arial,7,Bold</Font>
+                  <Guid>22896eb2ac5544888306217d9aea83e9</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>UnitDayPeriodsMileageHeader</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="62" />
+                  <Text>{ReportData_Titles.UnitDayPeriodsHeader_Mileage}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </UnitDayPeriodsMileageHeader>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Name>UnitDayPeriodsAdditionalInformationHeader</Name>
+              <Page isRef="22" />
+              <Parent isRef="53" />
+            </UnitDayPeriodsAdditionalInformationHeader>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>UnitDayPeriodsHeader</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+        </UnitDayPeriodsHeader>
+        <UnitDayReports Ref="66" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,9.4,19,0.6</ClientRectangle>
+          <Components isList="true" count="1">
+            <UnitDayReportsDayText Ref="67" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;1;Solid;Black;2;Solid;Black;2;Solid;False;4;Black</Border>
+              <Brush>[198:191:216]</Brush>
+              <ClientRectangle>0,0,19,0.6</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>ReportData_UnitReports_DayReports.IsWeekEnd,EqualTo,true,,Boolean,Red,[207:99:154],Arial_x002C_8,True,False,,,None,BackColor</value>
+              </Conditions>
+              <Font>Arial,7,Bold</Font>
+              <Hyperlink>#</Hyperlink>
+              <Margins>10,0,0,0</Margins>
+              <Name>UnitDayReportsDayText</Name>
+              <Page isRef="22" />
+              <Parent isRef="66" />
+              <Tag>Track;Green;{ReportData_UnitReports.UnitId};{ReportData_UnitReports_DayReports.BeginDateTimeValue};{ReportData_UnitReports_DayReports.EndDateTimeValue}</Tag>
+              <Text>{ReportData_UnitReports_DayReports.Day}</Text>
+              <TextBrush>Black</TextBrush>
+              <ToolTip>Кликните для отображения на карте.</ToolTip>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayReportsDayText>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName>ReportData_UnitReports_DayReportsRelation</DataRelationName>
+          <DataSourceName>ReportData_UnitReports_DayReports</DataSourceName>
+          <Filters isList="true" count="0" />
+          <MasterComponent isRef="34" />
+          <Name>UnitDayReports</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+          <Sort isList="true" count="0" />
+        </UnitDayReports>
+        <UnitDayPeriods Ref="68" type="DataBand" isKey="true">
+          <Border>Left, Right;Black;2;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,10.8,19,0.6</ClientRectangle>
+          <Components isList="true" count="8">
+            <UnitDayPeriodsNumberData Ref="69" type="Text" isKey="true">
+              <Border>AdvBlack;1;Solid;Black;1;Solid;Black;2;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,1,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <HorAlignment>Center</HorAlignment>
+              <Hyperlink>#</Hyperlink>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsNumberData</Name>
+              <Page isRef="22" />
+              <Parent isRef="68" />
+              <Tag>Track;Green;{ReportData_UnitReports.UnitId};{ReportData_UnitReports_DayReports_Periods.BeginDateTimeValue};{ReportData_UnitReports_DayReports_Periods.EndDateTimeValue}</Tag>
+              <Text>{Line}</Text>
+              <TextBrush>Black</TextBrush>
+              <ToolTip>Кликните для отображения на карте.</ToolTip>
+              <Type>SystemVariables</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsNumberData>
+            <UnitDayPeriodsActionData Ref="70" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>1,0,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>2689d73bf5fa467daf5e4b8eaacc59cd</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Hyperlink>#</Hyperlink>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsActionData</Name>
+              <Page isRef="22" />
+              <Parent isRef="68" />
+              <Tag>Track;Green;{ReportData_UnitReports.UnitId};{ReportData_UnitReports_DayReports_Periods.BeginDateTimeValue};{ReportData_UnitReports_DayReports_Periods.EndDateTimeValue}</Tag>
+              <Text>{ReportData_UnitReports_DayReports_Periods.PeriodName}</Text>
+              <TextBrush>Black</TextBrush>
+              <ToolTip>Кликните для отображения на карте.</ToolTip>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsActionData>
+            <UnitDayPeriodsLatitudeData Ref="119" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>1,0,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>2689d73bf5fa467daf5e4b8eaacc59ca</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Hyperlink>#</Hyperlink>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsLatitudeData</Name>
+              <Page isRef="22" />
+              <Parent isRef="68" />
+              <Tag>Point;{ReportData_UnitReports.UnitId};{ReportData_UnitReports_DayReports_Periods.BeginDateTimeValue};{ReportData_UnitReports_DayReports_Periods.Latitude};{ReportData_UnitReports_DayReports_Periods.Longitude}</Tag>
+              <Text>{ReportData_UnitReports_DayReports_Periods.Latitude}</Text>
+              <TextBrush>Black</TextBrush>
+              <ToolTip>Кликните для отображения на карте.</ToolTip>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsLatitudeData>
+            <UnitDayPeriodsLongitudeData Ref="120" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>1,0,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>2689d73bf5fa467daf5e4b8eaacc59cc</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Hyperlink>#</Hyperlink>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsLongitudeData</Name>
+              <Page isRef="22" />
+              <Parent isRef="68" />
+              <Tag>Point;{ReportData_UnitReports.UnitId};{ReportData_UnitReports_DayReports_Periods.BeginDateTimeValue};{ReportData_UnitReports_DayReports_Periods.Latitude};{ReportData_UnitReports_DayReports_Periods.Longitude}</Tag>
+              <Text>{ReportData_UnitReports_DayReports_Periods.Longitude}</Text>
+              <TextBrush>Black</TextBrush>
+              <ToolTip>Кликните для отображения на карте.</ToolTip>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsLongitudeData>
+            <UnitDayPeriodsBeginDateTimeData Ref="71" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.2,0,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>96fe1bb4edcb4f6daadfc733de52e9b4</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Hyperlink>#</Hyperlink>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsBeginDateTimeData</Name>
+              <Page isRef="22" />
+              <Parent isRef="68" />
+              <Tag>Track;Green;{ReportData_UnitReports.UnitId};{ReportData_UnitReports_DayReports_Periods.BeginDateTimeValue};{ReportData_UnitReports_DayReports_Periods.EndDateTimeValue}</Tag>
+              <Text>{ReportData_UnitReports_DayReports_Periods.BeginDateTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <ToolTip>Кликните для отображения на карте.</ToolTip>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsBeginDateTimeData>
+            <UnitDayPeriodsEndDateTimeData Ref="72" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>5.4,0,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>ec5bf400c5884b429f44282dc9bd08bd</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Hyperlink>#</Hyperlink>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsEndDateTimeData</Name>
+              <Page isRef="22" />
+              <Parent isRef="68" />
+              <Tag>Track;Green;{ReportData_UnitReports.UnitId};{ReportData_UnitReports_DayReports_Periods.BeginDateTimeValue};{ReportData_UnitReports_DayReports_Periods.EndDateTimeValue}</Tag>
+              <Text>{ReportData_UnitReports_DayReports_Periods.EndDateTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <ToolTip>Кликните для отображения на карте.</ToolTip>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsEndDateTimeData>
+            <UnitDayPeriodsDurationData Ref="73" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>7.6,0,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>b76feb4ab29f4b5baf743e3a65571cbb</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Hyperlink>#</Hyperlink>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsDurationData</Name>
+              <Page isRef="22" />
+              <Parent isRef="68" />
+              <Tag>Track;Green;{ReportData_UnitReports.UnitId};{ReportData_UnitReports_DayReports_Periods.BeginDateTimeValue};{ReportData_UnitReports_DayReports_Periods.EndDateTimeValue}</Tag>
+              <Text>{ReportData_UnitReports_DayReports_Periods.Duration}</Text>
+              <TextBrush>Black</TextBrush>
+              <ToolTip>Кликните для отображения на карте.</ToolTip>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsDurationData>
+            <UnitDayPeriodsEngineIdleDurationData Ref="74" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>9.8,0,1.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>80e325051fcf44d08e49c8f4f695799a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Hyperlink>#</Hyperlink>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsEngineIdleDurationData</Name>
+              <Page isRef="22" />
+              <Parent isRef="68" />
+              <Tag>Track;Green;{ReportData_UnitReports.UnitId};{ReportData_UnitReports_DayReports_Periods.BeginDateTimeValue};{ReportData_UnitReports_DayReports_Periods.EndDateTimeValue}</Tag>
+              <Text>{ReportData_UnitReports_DayReports_Periods.EngineIdleDuration}</Text>
+              <TextBrush>Black</TextBrush>
+              <ToolTip>Кликните для отображения на карте.</ToolTip>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsEngineIdleDurationData>
+            <UnitDayPeriodsEngineActiveWorkDurationData Ref="75" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>11.4,0,1.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>5bbc7dd315584c57bca7076dc826695a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Hyperlink>#</Hyperlink>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayPeriodsEngineActiveWorkDurationData</Name>
+              <Page isRef="22" />
+              <Parent isRef="68" />
+              <Tag>Track;Green;{ReportData_UnitReports.UnitId};{ReportData_UnitReports_DayReports_Periods.BeginDateTimeValue};{ReportData_UnitReports_DayReports_Periods.EndDateTimeValue}</Tag>
+              <Text>{ReportData_UnitReports_DayReports_Periods.EngineActiveWorkDuration}</Text>
+              <TextBrush>Black</TextBrush>
+              <ToolTip>Кликните для отображения на карте.</ToolTip>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayPeriodsEngineActiveWorkDurationData>
+            <UnitDayPeriodsAdditionalInformationData Ref="76" type="Stimulsoft.Report.Components.StiPanel" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>13,0,6,0.6</ClientRectangle>
+              <Components isList="true" count="3">
+                <UnitDayPeriodsAddressData Ref="77" type="Text" isKey="true">
+                  <Border>AdvBlack;1;Solid;Black;1;Solid;Black;1;Solid;Black;2;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>0,0,6,0.6</ClientRectangle>
+                  <Conditions isList="true" count="4">
+                    <value>ReportData_UnitReports_DayReports_Periods.PeriodTypeCode,EqualTo,_x0031_,,Numeric,Red,[252:255:231],Arial_x002C_8,True,False,,,None,BackColor</value>
+                    <value>ReportData_UnitReports_DayReports_Periods.PeriodTypeCode,EqualTo,_x0032_,,Numeric,Red,[206:255:206],Arial_x002C_8,False,False,,,None,BackColor</value>
+                    <value>ReportData_UnitReports_DayReports_Periods.PeriodTypeCode,EqualTo,_x0034_,,Numeric,Red,[227:136:112],Arial_x002C_8,False,False,,,None,BackColor</value>
+                    <value>ReportData_UnitReports_DayReports_Periods.PeriodTypeCode,EqualTo,_x0038_,,Numeric,Red,[227:136:112],Arial_x002C_8,False,False,,,None,BackColor</value>
+                  </Conditions>
+                  <DockStyle>Fill</DockStyle>
+                  <Enabled>False</Enabled>
+                  <Font>Arial,7</Font>
+                  <GrowToHeight>True</GrowToHeight>
+                  <Guid>ef777e02b6fb4bbaa953944937a75d56</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Hyperlink>#</Hyperlink>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>UnitDayPeriodsAddressData</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="76" />
+                  <Tag>Track;Green;{ReportData_UnitReports.UnitId};{ReportData_UnitReports_DayReports_Periods.BeginDateTimeValue};{ReportData_UnitReports_DayReports_Periods.EndDateTimeValue}</Tag>
+                  <Text>{ReportData_UnitReports_DayReports_Periods.Address}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+                  <ToolTip>Кликните для отображения на карте.</ToolTip>
+                  <Type>DataColumn</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </UnitDayPeriodsAddressData>
+                <UnitDayPeriodsAverageSpeedData Ref="78" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>0,0,3,0.6</ClientRectangle>
+                  <Conditions isList="true" count="4">
+                    <value>ReportData_UnitReports_DayReports_Periods.PeriodTypeCode,EqualTo,_x0031_,,Numeric,Red,[252:255:231],Arial_x002C_8,False,False,,,None,BackColor</value>
+                    <value>ReportData_UnitReports_DayReports_Periods.PeriodTypeCode,EqualTo,_x0032_,,Numeric,Red,[206:255:206],Arial_x002C_8,True,False,,,None,BackColor</value>
+                    <value>ReportData_UnitReports_DayReports_Periods.PeriodTypeCode,EqualTo,_x0034_,,Numeric,Red,[227:136:112],Arial_x002C_8,True,False,,,None,BackColor</value>
+                    <value>ReportData_UnitReports_DayReports_Periods.PeriodTypeCode,EqualTo,_x0038_,,Numeric,Red,[227:136:112],Arial_x002C_8,True,False,,,None,BackColor</value>
+                  </Conditions>
+                  <DockStyle>Left</DockStyle>
+                  <Font>Arial,7</Font>
+                  <GrowToHeight>True</GrowToHeight>
+                  <Guid>100fb14c0c684214a6056076bea5e378</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Hyperlink>#</Hyperlink>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>UnitDayPeriodsAverageSpeedData</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="76" />
+                  <Tag>Track;Green;{ReportData_UnitReports.UnitId};{ReportData_UnitReports_DayReports_Periods.BeginDateTimeValue};{ReportData_UnitReports_DayReports_Periods.EndDateTimeValue}</Tag>
+                  <Text>{ReportData_UnitReports_DayReports_Periods.AverageSpeed}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <ToolTip>Кликните для отображения на карте.</ToolTip>
+                  <Type>DataColumn</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </UnitDayPeriodsAverageSpeedData>
+                <UnitDayPeriodsMileageData Ref="79" type="Text" isKey="true">
+                  <Border>AdvBlack;1;Solid;Black;1;Solid;Black;1;Solid;Black;2;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>3,0,3,0.6</ClientRectangle>
+                  <Conditions isList="true" count="4">
+                    <value>ReportData_UnitReports_DayReports_Periods.PeriodTypeCode,EqualTo,_x0031_,,Numeric,Red,[252:255:231],Arial_x002C_8,False,False,,,None,BackColor</value>
+                    <value>ReportData_UnitReports_DayReports_Periods.PeriodTypeCode,EqualTo,_x0032_,,Numeric,Red,[206:255:206],Arial_x002C_8,True,False,,,None,BackColor</value>
+                    <value>ReportData_UnitReports_DayReports_Periods.PeriodTypeCode,EqualTo,_x0034_,,Numeric,Red,[227:136:112],Arial_x002C_8,True,False,,,None,BackColor</value>
+                    <value>ReportData_UnitReports_DayReports_Periods.PeriodTypeCode,EqualTo,_x0038_,,Numeric,Red,[227:136:112],Arial_x002C_8,True,False,,,None,BackColor</value>
+                  </Conditions>
+                  <DockStyle>Fill</DockStyle>
+                  <Font>Arial,7</Font>
+                  <GrowToHeight>True</GrowToHeight>
+                  <Guid>89525e8cfc8441e2b9e36fe729efe1a7</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Hyperlink>#</Hyperlink>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>UnitDayPeriodsMileageData</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="76" />
+                  <Tag>Track;Green;{ReportData_UnitReports.UnitId};{ReportData_UnitReports_DayReports_Periods.BeginDateTimeValue};{ReportData_UnitReports_DayReports_Periods.EndDateTimeValue}</Tag>
+                  <Text>{ReportData_UnitReports_DayReports_Periods.Mileage}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <ToolTip>Кликните для отображения на карте.</ToolTip>
+                  <Type>DataColumn</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </UnitDayPeriodsMileageData>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Fill</DockStyle>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>e008e08e91d84ab7a7ff2e23fab78f06</Guid>
+              <Name>UnitDayPeriodsAdditionalInformationData</Name>
+              <Page isRef="22" />
+              <Parent isRef="68" />
+            </UnitDayPeriodsAdditionalInformationData>
+          </Components>
+          <Conditions isList="true" count="4">
+            <value>ReportData_UnitReports_DayReports_Periods.PeriodTypeCode,EqualTo,_x0031_,,Numeric,Red,[252:255:231],Arial_x002C_8,True,False,,,None,BackColor</value>
+            <value>ReportData_UnitReports_DayReports_Periods.PeriodTypeCode,EqualTo,_x0032_,,Numeric,Red,[206:255:206],Arial_x002C_8,True,False,,,None,BackColor</value>
+            <value>ReportData_UnitReports_DayReports_Periods.PeriodTypeCode,EqualTo,_x0034_,,Numeric,Red,[227:136:112],Arial_x002C_8,True,False,,,None,BackColor</value>
+            <value>ReportData_UnitReports_DayReports_Periods.PeriodTypeCode,EqualTo,_x0038_,,Numeric,Red,[227:136:112],Arial_x002C_8,True,False,,,None,BackColor</value>
+          </Conditions>
+          <DataRelationName>ReportData_UnitReports_DayReports_PeriodsRelation</DataRelationName>
+          <DataSourceName>ReportData_UnitReports_DayReports_Periods</DataSourceName>
+          <Filters isList="true" count="0" />
+          <MasterComponent isRef="66" />
+          <Name>UnitDayPeriods</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+          <Sort isList="true" count="0" />
+        </UnitDayPeriods>
+        <UnitDayReportFooter Ref="80" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,12.2,19,0.6</ClientRectangle>
+          <Components isList="true" count="7">
+            <UnitDayFooterLabel Ref="81" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;2;Solid;Black;2;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>[204:204:204]</Brush>
+              <ClientRectangle>0,0,3.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7,Bold</Font>
+              <Margins>10,0,0,0</Margins>
+              <MaxSize>0,6</MaxSize>
+              <Name>UnitDayFooterLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="80" />
+              <Text>{ReportData_Titles.UnitDayReportFooter_Total}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayFooterLabel>
+			<UnitDayFooterLatitude Ref="123" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;2;Solid;Black;1;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>[204:204:204]</Brush>
+              <ClientRectangle>3.2,0,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7,Bold</Font>
+              <Guid>75c7029824b2480c8cc3aa092459c9f5</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayFooterLatitude</Name>
+              <Page isRef="22" />
+              <Parent isRef="80" />
+              <Text></Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayFooterLatitude>
+			<UnitDayFooterLongitude Ref="124" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;2;Solid;Black;1;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>[204:204:204]</Brush>
+              <ClientRectangle>3.2,0,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7,Bold</Font>
+              <Guid>75c7029824b2480c8cc3aa092459c9f6</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayFooterLongitude</Name>
+              <Page isRef="22" />
+              <Parent isRef="80" />
+              <Text></Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayFooterLongitude>
+            <UnitDayFooterBeginDateTime Ref="82" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;2;Solid;Black;1;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>[204:204:204]</Brush>
+              <ClientRectangle>3.2,0,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7,Bold</Font>
+              <Guid>75c7029824b2480c8cc3aa092459c9f4</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayFooterBeginDateTime</Name>
+              <Page isRef="22" />
+              <Parent isRef="80" />
+              <Text>{ReportData_UnitReports_DayReports.BeginDateTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayFooterBeginDateTime>
+            <UnitDayFooterEndDateTime Ref="83" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;2;Solid;Black;1;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>[204:204:204]</Brush>
+              <ClientRectangle>5.4,0,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7,Bold</Font>
+              <Guid>0700df3101f94721ad0f8bb55c72417f</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayFooterEndDateTime</Name>
+              <Page isRef="22" />
+              <Parent isRef="80" />
+              <Text>{ReportData_UnitReports_DayReports.EndDateTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayFooterEndDateTime>
+            <UnitDayFooterDuration Ref="84" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;2;Solid;Black;1;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>[204:204:204]</Brush>
+              <ClientRectangle>7.6,0,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7,Bold</Font>
+              <Guid>b8f1bb5ab147417ca35f21c27c05ebc7</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayFooterDuration</Name>
+              <Page isRef="22" />
+              <Parent isRef="80" />
+              <Text>{ReportData_UnitReports_DayReports.Duration}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayFooterDuration>
+            <UnitDayFooterEngineIdleDuration Ref="85" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;2;Solid;Black;1;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>[204:204:204]</Brush>
+              <ClientRectangle>9.8,0,1.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7,Bold</Font>
+              <Guid>d0428e4a95d342e4974081e52eded156</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayFooterEngineIdleDuration</Name>
+              <Page isRef="22" />
+              <Parent isRef="80" />
+              <Text>{ReportData_UnitReports_DayReports.EngineIdleDuration}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayFooterEngineIdleDuration>
+            <UnitDayFooterEngineActiveWorkDuration Ref="86" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;2;Solid;Black;1;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>[204:204:204]</Brush>
+              <ClientRectangle>11.4,0,1.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Font>Arial,7,Bold</Font>
+              <Guid>4db1b3dc45cc444eb5a7ba0bf5abb6c8</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitDayFooterEngineActiveWorkDuration</Name>
+              <Page isRef="22" />
+              <Parent isRef="80" />
+              <Text>{ReportData_UnitReports_DayReports.EngineActiveWorkDuration}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitDayFooterEngineActiveWorkDuration>
+            <UnitDayFooterAdditionalInformation Ref="87" type="Stimulsoft.Report.Components.StiPanel" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>13,0,6,0.6</ClientRectangle>
+              <Components isList="true" count="2">
+                <UnitDayFooterAverageSpeed Ref="88" type="Text" isKey="true">
+                  <Border>AdvBlack;2;Solid;Black;2;Solid;Black;1;Solid;Black;1;Solid;False;4;Black</Border>
+                  <Brush>[204:204:204]</Brush>
+                  <ClientRectangle>0,0,3,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <DockStyle>Left</DockStyle>
+                  <Font>Arial,7,Bold</Font>
+                  <Guid>e8d6663426494afdbc49fee898dd8bec</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>UnitDayFooterAverageSpeed</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="87" />
+                  <Text>{ReportData_UnitReports_DayReports.AverageSpeed}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>DataColumn</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </UnitDayFooterAverageSpeed>
+                <UnitDayFooterMileage Ref="89" type="Text" isKey="true">
+                  <Border>AdvBlack;2;Solid;Black;2;Solid;Black;1;Solid;Black;2;Solid;False;4;Black</Border>
+                  <Brush>[204:204:204]</Brush>
+                  <ClientRectangle>3,0,3,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <DockStyle>Fill</DockStyle>
+                  <Font>Arial,7,Bold</Font>
+                  <Guid>6805e5c2258640b0a167cd3a06a6b45d</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>UnitDayFooterMileage</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="87" />
+                  <Text>{ReportData_UnitReports_DayReports.Mileage}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>DataColumn</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </UnitDayFooterMileage>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Fill</DockStyle>
+              <Guid>4a0d4b95f5c842ba9ec775acdf4eaa96</Guid>
+              <Name>UnitDayFooterAdditionalInformation</Name>
+              <Page isRef="22" />
+              <Parent isRef="80" />
+            </UnitDayFooterAdditionalInformation>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>UnitDayReportFooter</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+        </UnitDayReportFooter>
+        <FooterBand1 Ref="90" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,13.6,19,0.2</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>FooterBand1</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+        </FooterBand1>
+        <UnitReportSummary Ref="91" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,14.6,19,4.28</ClientRectangle>
+          <Components isList="true" count="24">
+            <UnitReportSummaryTotalTimeLabel Ref="92" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;2;Solid;Black;2;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,7,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Margins>10,0,0,0</Margins>
+              <Name>UnitReportSummaryTotalTimeLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_Titles.UnitReportSummary_TotalTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryTotalTimeLabel>
+            <UnitReportSummaryTotalStopTimeLabel Ref="93" type="Text" isKey="true">
+              <Border>AdvBlack;1;Solid;Black;1;Solid;Black;2;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.6,7,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>591c3bb79f334b45be45c13e0e71ede6</Guid>
+              <Margins>10,0,0,0</Margins>
+              <Name>UnitReportSummaryTotalStopTimeLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_Titles.UnitReportSummary_TotalStopTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryTotalStopTimeLabel>
+            <UnitReportSummaryMoveTimeLabel Ref="94" type="Text" isKey="true">
+              <Border>AdvBlack;1;Solid;Black;1;Solid;Black;2;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.2,7,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>945c240bd4dd49b7ac032a6e02a2dd33</Guid>
+              <Margins>10,0,0,0</Margins>
+              <Name>UnitReportSummaryMoveTimeLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_Titles.UnitReportSummary_MoveTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryMoveTimeLabel>
+            <UnitReportSummaryBreakTimeLabel Ref="95" type="Text" isKey="true">
+              <Border>AdvBlack;1;Solid;Black;1;Solid;Black;2;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.8,7,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>0bfb15fe408d4479ab432315bfc16074</Guid>
+              <Margins>10,0,0,0</Margins>
+              <Name>UnitReportSummaryBreakTimeLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_Titles.UnitReportSummary_BreakTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryBreakTimeLabel>
+            <UnitReportSummaryEngineOnTimeLabel Ref="96" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;1;Solid;Black;2;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2.4,7,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>de7d8853edfd4f9a9140e55804d16882</Guid>
+              <Margins>10,0,0,0</Margins>
+              <Name>UnitReportSummaryEngineOnTimeLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_Titles.UnitReportSummary_EngineOnTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryEngineOnTimeLabel>
+            <UnitReportSummaryEngineIdleTimeLabel Ref="97" type="Text" isKey="true">
+              <Border>AdvBlack;1;Solid;Black;1;Solid;Black;2;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3,7,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>721f9eaeb063474ebd00413ce2a73d82</Guid>
+              <Margins>10,0,0,0</Margins>
+              <Name>UnitReportSummaryEngineIdleTimeLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_Titles.UnitReportSummary_EngineIdleTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryEngineIdleTimeLabel>
+            <UnitReportSummaryTotalTime Ref="98" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;2;Solid;Black;1;Solid;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,0,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitReportSummaryTotalTime</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_UnitReports_Summary.TotalTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryTotalTime>
+            <UnitReportSummaryTotalStopTime Ref="99" type="Text" isKey="true">
+              <Border>AdvBlack;1;Solid;Black;1;Solid;Black;1;Solid;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,0.6,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>8b4768d27ed044ae97cc60236191a0af</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitReportSummaryTotalStopTime</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_UnitReports_Summary.TotalStopTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryTotalStopTime>
+            <UnitReportSummaryMoveTime Ref="100" type="Text" isKey="true">
+              <Border>AdvBlack;1;Solid;Black;1;Solid;Black;1;Solid;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,1.2,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>d2a39279731e41c4b8434210716cce6b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitReportSummaryMoveTime</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_UnitReports_Summary.TotalMoveTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryMoveTime>
+            <UnitReportSummaryBreakTime Ref="101" type="Text" isKey="true">
+              <Border>AdvBlack;1;Solid;Black;1;Solid;Black;1;Solid;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,1.8,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>9371e7be7ca84e1c8e6fda889756e081</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitReportSummaryBreakTime</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_UnitReports_Summary.TotalBreakTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryBreakTime>
+            <UnitReportSummaryEngineOnTime Ref="102" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;1;Solid;Black;1;Solid;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,2.4,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>6e9e8fc5f9fc4aeab30d2930cd1bf241</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitReportSummaryEngineOnTime</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_UnitReports_Summary.EngineOnTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryEngineOnTime>
+            <UnitReportSummaryEngineIdleTime Ref="103" type="Text" isKey="true">
+              <Border>AdvBlack;1;Solid;Black;1;Solid;Black;1;Solid;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,3,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>e756f35c067948bdb102bfea8c8eec17</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitReportSummaryEngineIdleTime</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_UnitReports_Summary.EngineIdleTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryEngineIdleTime>
+            <UnitReportSummaryMileageLabel Ref="104" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;1;Solid;Black;2;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.4,0,4.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>6b64769a714a454ba7b5009e213912f8</Guid>
+              <Margins>10,0,0,0</Margins>
+              <Name>UnitReportSummaryMileageLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_Titles.UnitReportSummary_Mileage}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryMileageLabel>
+            <UnitReportSummaryBreakMileageLabel Ref="105" type="Text" isKey="true">
+              <Border>AdvBlack;1;Solid;Black;1;Solid;Black;2;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.4,0.6,4.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>7bab45eccba241d1be05ea45f8df74fa</Guid>
+              <Margins>10,0,0,0</Margins>
+              <Name>UnitReportSummaryBreakMileageLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_Titles.UnitReportSummary_BreakMileage}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryBreakMileageLabel>
+            <UnitReportSummaryAverageSpeedLabel Ref="106" type="Text" isKey="true">
+              <Border>AdvBlack;1;Solid;Black;1;Solid;Black;2;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.4,1.2,4.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>c0cd1ac4314b41db99a7a32fda2b9e2c</Guid>
+              <Margins>10,0,0,0</Margins>
+              <Name>UnitReportSummaryAverageSpeedLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_Titles.UnitReportSummary_AverageSpeed}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryAverageSpeedLabel>
+            <UnitReportSummaryMaxSpeedLabel Ref="107" type="Text" isKey="true">
+              <Border>AdvBlack;1;Solid;Black;1;Solid;Black;2;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.4,1.8,4.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>776e878b1a774929a37252a9b62f621d</Guid>
+              <Margins>10,0,0,0</Margins>
+              <Name>UnitReportSummaryMaxSpeedLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_Titles.UnitReportSummary_MaxSpeed}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryMaxSpeedLabel>
+            <UnitReportSummaryMileage Ref="108" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;1;Solid;Black;1;Solid;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15,0,4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>8017b26e80174d72bb504223ceda77eb</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitReportSummaryMileage</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_UnitReports_Summary.Mileage}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryMileage>
+            <UnitReportSummaryBreakMileage Ref="109" type="Text" isKey="true">
+              <Border>AdvBlack;1;Solid;Black;1;Solid;Black;1;Solid;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15,0.6,4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>9d859a27955c4edc9f72cb3ae121f9bd</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitReportSummaryBreakMileage</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_UnitReports_Summary.BreakMileage}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryBreakMileage>
+            <UnitReportSummaryAverageSpeed Ref="110" type="Text" isKey="true">
+              <Border>AdvBlack;1;Solid;Black;1;Solid;Black;1;Solid;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15,1.2,4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>6ffdabad1d574842aabf3580cc15d283</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitReportSummaryAverageSpeed</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_UnitReports_Summary.AverageSpeed}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryAverageSpeed>
+            <UnitReportSummaryMaxSpeed Ref="111" type="Text" isKey="true">
+              <Border>AdvBlack;1;Solid;Black;1;Solid;Black;1;Solid;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15,1.8,4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>6d4574347fa24b53aa31ac3d6709e2c7</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitReportSummaryMaxSpeed</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_UnitReports_Summary.MaxSpeed}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryMaxSpeed>
+            <UnitReportSummaryFuelSpentLabel Ref="112" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;2;Solid;Black;2;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.4,2.4,4.6,1.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>b54a24b3464241cc97f006990f6f5944</Guid>
+              <Margins>10,0,0,0</Margins>
+              <Name>UnitReportSummaryFuelSpentLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_Titles.UnitReportSummary_FuelSpent}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryFuelSpentLabel>
+            <UnitReportSummaryFuelSpent Ref="113" type="Text" isKey="true">
+              <Border>AdvBlack;2;Solid;Black;2;Solid;Black;1;Solid;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15,2.4,4,1.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>1551d339f1ca44ae97d7a4b264efd640</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitReportSummaryFuelSpent</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_UnitReports_Summary.FuelSpentText}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryFuelSpent>
+            <UnitReportSummaryEngineActiveWorkTimeLabel Ref="114" type="Text" isKey="true">
+              <Border>AdvBlack;1;Solid;Black;2;Solid;Black;2;Solid;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3.6,7,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>ed1027fe3a734e87a2cdfcbb4b22e5e9</Guid>
+              <Margins>10,0,0,0</Margins>
+              <Name>UnitReportSummaryEngineActiveWorkTimeLabel</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_Titles.UnitReportSummary_EngineActiveWorkTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryEngineActiveWorkTimeLabel>
+            <UnitReportSummaryEngineActiveWorkTime Ref="115" type="Text" isKey="true">
+              <Border>AdvBlack;1;Solid;Black;2;Solid;Black;1;Solid;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,3.6,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>5330b5f282ea42289cf8e414bef49c4a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>UnitReportSummaryEngineActiveWorkTime</Name>
+              <Page isRef="22" />
+              <Parent isRef="91" />
+              <Text>{ReportData_UnitReports_Summary.EngineActiveWorkTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </UnitReportSummaryEngineActiveWorkTime>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName>ReportData_UnitReports_SummaryRelation</DataRelationName>
+          <DataSourceName>ReportData_UnitReports_Summary</DataSourceName>
+          <Filters isList="true" count="0" />
+          <MasterComponent isRef="34" />
+          <Name>UnitReportSummary</Name>
+          <NewPageAfter>True</NewPageAfter>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+          <Sort isList="true" count="0" />
+        </UnitReportSummary>
+        <RectanglePrimitive1 Ref="116" type="RectanglePrimitive" isKey="true">
+          <ClientRectangle>0,4,19,1.8</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>a2a2b3286e374b6a923e389e1e07ad27</Guid>
+          <Name>RectanglePrimitive1</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+          <Size>2</Size>
+        </RectanglePrimitive1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>c05f5e5ab2b4408bb6489a12e2d03e5f</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="121" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="122" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Scout.Plugins.Core.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Движения и стоянки</ReportAlias>
+  <ReportAuthor>ООО Интелсофт</ReportAuthor>
+  <ReportChanged>3/21/2014 6:56:59 PM</ReportChanged>
+  <ReportCreated>3/19/2012 1:03:31 PM</ReportCreated>
+  <ReportFile>D:\ScoutProjects\ScoutSoftware\S\Main\Plugins\Core\Server\AppServer\Scout.Plugins.Core.Server.AppServer\CoreReports\Rmp\RmpReportTemplate.mrt</ReportFile>
+  <ReportGuid>bf623b993d0941f08e171daf356c0181</ReportGuid>
+  <ReportName>MovementAndParkings</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2012.2.1400</ReportVersion>
+  <Script />
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

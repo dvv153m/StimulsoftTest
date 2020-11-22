@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Report.mrt - Viewer</title>
+	<link rel="stylesheet" type="text/css" href="css/stimulsoft.viewer.office2013.whiteblue.css">
+	<script type="text/javascript" src="scripts/stimulsoft.reports.js"></script>
+	<script type="text/javascript" src="scripts/stimulsoft.reports.maps.js"></script>
+	<script type="text/javascript" src="scripts/stimulsoft.viewer.js"></script>
+
+	<script type="text/javascript">
+		function Start() {
+		
+			var flag = false;		
+		    // Create a new report instance
+			var report = new Stimulsoft.Report.StiReport();
+ 
+			if(flag)
+			{
+			    // Load report from url
+			    report.loadFile("../reports/RmpReportTemplate.mrt");
+				// Create new DataSet object
+				var dataSet = new Stimulsoft.System.Data.DataSet("ReportData");
+				// Load JSON data file from specified URL to the DataSet object
+				dataSet.readJsonFile("../reports/ReportData.json");
+				// Remove all connections from the report template
+				report.dictionary.databases.clear();
+				// Register DataSet object
+				report.regData("ReportData", "ReportData", dataSet);
+			}
+			else
+			{
+			    report.loadFile("../reports/report2.mrt");
+				dataSet = new Stimulsoft.System.Data.DataSet("Demo1");
+				// Load JSON data file from specified URL to the DataSet object
+				dataSet.readJsonFile("../reports/Demo.json");
+				// Remove all connections from the report template
+				report.dictionary.databases.clear();
+				// Register DataSet object
+				report.regData("Demo11", "Demo12", dataSet);
+			}
+			
+			// Render report with registered data
+			//report.render();
+			
+			
+			//var report = Stimulsoft.Report.StiReport.createNewReport();
+			//var report = new Stimulsoft.Report.StiReport();
+			//report.loadFile("reports/report2.mrt");			
+
+			var options = new Stimulsoft.Viewer.StiViewerOptions();
+			var viewer = new Stimulsoft.Viewer.StiViewer(options, "StiViewer", false);
+			viewer.report = report;
+			viewer.renderHtml("viewerContent");
+		}
+	</script>
+</head>
+<body onload="Start()">
+	<div id="viewerContent"></div>
+</body>
+</html>
